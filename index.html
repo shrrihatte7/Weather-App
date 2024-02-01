@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+    <title>Weather App</title>
+</head>
+<body class="bg-[#222] font">
+    <div class="card rounded-xl bg-gradient-to-r from-sky-500 to-indigo-500 w-[25%] m-w-[470px text-white] m-auto mt-28 pt-[40px] pr-[35px] text-center pb-10">
+        <div class="search flex w-[100%] justify-center items-center space-x-4">
+            <input type="text" class="border border-blue-200 rounded-full w-72 h-10 ml-7 px-4 py-2" placeholder="enter city name">
+            <button>
+                <i class="fa-solid fa-magnifying-glass bg-white p-4 rounded-full"></i>
+            </button>
+        </div>
+        <div class="error-message text-white mt-2 hidden">
+            Invalid City Name.
+        </div>
+        <div class="weather hidden">
+            <img src="images/clouds.png" class="h-36 w-36 m-auto" alt="">
+            <h2 class="text-white text-[45px] font-semibold text-center degree">22<sup>o</sup>c</h2>
+            <h2 class="text-white text-[40px] text-center ml-5 city">New York</h2>
+            
+        <div class="details1 flex justify-start items-center ml-10 mt-10 w-[30%]">
+            <div class="humimg">
+            <img src="images/humidity.png" class="w-10 h-10" alt="">
+        </div>
+            <div class="humdet space-x-2 -mt-2">
+            <p class="text-white text-2xl humpercent">50%</p>
+            <p class="text-white text-sm humidity ">Humidity</p>
+        </div>
+        </div>
+
+        <div class="details2 flex justify-end items-center pb-10 -mt-12">
+            <div class="humimg">
+            <img src="images/wind.png" class="w-10 h-10" alt="">
+        </div>
+            <div class="humdet space-x-2 -mt-2">
+            <p class="text-white text-2xl windspeed">15km/h</p>
+            <p class="text-white text-sm">WindSpeed</p>
+        </div>
+        </div>
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
